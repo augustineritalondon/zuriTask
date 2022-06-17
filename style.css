@@ -1,0 +1,121 @@
+:root{
+    --blackOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --lightGrey: hsl(0, 0%, 95%);
+}
+
+body{
+    background: var(--lightGrey);
+}
+
+button{
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: bold;
+    margin-top: 90px;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.container{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+}
+
+.wrapper{
+    align-self: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.content .orange{
+    background: var(--blackOrange);
+    color: white;
+    width: 15%;
+    padding: 40px 40px;
+}
+
+.content .orange button{
+    color: var(--blackOrange);
+}
+
+.content .cyan{
+    background: var(--darkCyan);
+    color: white;
+    width: 15%;
+    padding: 40px 40px;
+}
+
+.content .cyan button{
+    color: var(--darkCyan);
+}
+
+.content .dark_cyan{
+    background: var(--veryDarkCyan);
+    color: white;
+    width: 15%;
+    padding: 40px 40px;
+}
+
+.content .dark_cyan button{
+    color: var(--veryDarkCyan);
+}
+
+@media screen and (max-width: 768px){
+    .content{
+        flex-direction: column;
+    }
+    .content .orange{
+        width: 80%;
+    }
+    .content .cyan{
+        width: 80%;
+    }
+    .content .dark_cyan{
+        width: 80%;
+    }
+}
+
+.grid_content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100vh;
+    height: 100vh;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.grid_item_1{
+    background: red;
+    grid-column: 1/3;
+}
+
+.grid_item_2{
+    background: orange;
+}
+.grid_item_3{
+    background: green;
+    grid-column: 1;
+}
+.grid_item_4{
+    background: cyan;
+}
+.grid_item_5{
+    background: cyan;
+}
